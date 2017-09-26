@@ -1,0 +1,14 @@
+Source: pardus-backgrounds
+Section: utils
+Priority: optional
+Maintainer: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: http://pardus.org.tr
+
+Package: pardus-backgrounds
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Pardus Wallpaper Package
+ Pardus backgrounds package provides wallpaper set.
