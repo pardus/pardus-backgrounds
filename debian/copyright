@@ -7,6 +7,10 @@ Files: *
 Copyright: 2017, Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
 License: GPL-3.0+
 
+Files: pictures/*
+Copyright: 2017, Selahattin Aybay <selahattinaybay@hotmail.com>
+License: GPL-3.0+
+
 License: GPL-3.0+
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
