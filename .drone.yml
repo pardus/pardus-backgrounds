@@ -2,7 +2,7 @@ build:
   package:
     image: pardus/pardus-package
     volumes:
-      - /tmp/packages:/packages
+      - /packages:/packages
     commands:
       - echo "TODO lintian -i /packages/$(basename $DRONE_REPO)/*.changes"
       - apt-get update
@@ -18,14 +18,14 @@ build:
   test:
     image: pardus/pardus-test
     volumes:
-      - /tmp/packages:/packages
+      - /packages:/packages
     commands:
       - apt-get update
       - apt-get install /packages/$(basename $DRONE_REPO)/*.deb
   deploy:
     image: pardus/pardus-test
     volumes:
-      - /tmp/packages:/packages
+      - /packages:/packages
     commands:
       - apt-get update
       - echo "TODO deployment container (pardus/pardus-deploy) is yet to be prepared"
