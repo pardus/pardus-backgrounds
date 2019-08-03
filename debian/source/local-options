@@ -1,3 +1,0 @@
-#abort-on-upstream-changes
-#unapply-patches
-extend-diff-ignore = ".drone.yml"
