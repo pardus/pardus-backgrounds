@@ -1,3 +1,9 @@
+pardus-backgrounds (0.5) ondokuz; urgency=medium
+
+  * Add new backgrounds from Xubuntu community wallpaper package
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Sat, 03 Aug 2019 14:25:14 +0300
+
 pardus-backgrounds (0.4) ondokuz; urgency=medium
 
   * Change artifact location and itself
