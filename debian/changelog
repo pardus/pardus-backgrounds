@@ -1,3 +1,10 @@
+pardus-backgrounds (1.0) ondokuz; urgency=medium
+
+  * Update template and backgrounds for Pardus21
+  * Fix typo
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Fri, 02 Jul 2021 14:47:08 +0300
+
 pardus-backgrounds (0.6) ondokuz; urgency=medium
 
   * Add new backgrounds
