@@ -1,62 +1,14 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: pardus-backgrounds
-Upstream-Contact: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
-Source: http://pardus.org.tr
+Upstream-Contact: Fatih Altun <fatih.altun@pardus.org.tr>
+Source: https://www.pardus.org.tr
 
 Files: *
-Copyright: 2017, Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+Copyright: 2021, Fatih Altun <fatih.altun@pardus.org.tr>
 License: GPL-3.0+
 
 Files: pictures/*
-Copyright: 2017, Selahattin Aybay <selahattinaybay@hotmail.com>
-License: GPL-3.0+
-
-Files: pictures/balance.jpg
-Copyright: 2014, Gavin Ash <hello@gavinash.com>
-License: CC-BY-SA
-
-Files: pictures/cloudbreaker.jpg
-Copyright: 2014, Kayden D'Mello <photonfossil@gmail.com>
-License: CC-BY-SA
-
-Files: pictures/housenearlake.jpg
-Copyright: 2016, Elizabeth K. Joseph
-License: CC-BY-3.0
-
-Files: pictures/whitemountain.jpg
-Copyright: 2016, Sven Scheuermeier
-License: CC0
-
-Files: pictures/squirrel.jpg
-Copyright: 2016, bluesabreWife
-License: CC-BY-3.0
-
-Files: pictures/aboveclouds.jpg
-Copyright: 2016, Kaushik Panchal
-License: CC0
-
-Files: pictures/brownmountain.jpg
-Copyright: 2016, Mike Sinko
-License: CC-BY-3.0
-
-Files: pictures/leafdrop.jpg
-Copyright: 2016, Mike Sinko
-License: CC-BY-3.0
-
-Files: pictures/BirHilalUgruna.jpg
-Copyright: 2020, Filiz Arıcan <selahattinaybay@hotmail.com>
-License: GPL-3.0+
-
-Files: pictures/Eminonu.jpg
-Copyright: 2020, Şükrü Okul <selahattinaybay@hotmail.com>
-License: GPL-3.0+
-
-Files: pictures/KenttenKacis.jpg
-Copyright: 2020, Erkan Tiryaki <selahattinaybay@hotmail.com>
-License: GPL-3.0+
-
-Files: pictures/Yedigoller.jpg
-Copyright: 2020, Ziya Uysal <selahattinaybay@hotmail.com>
+Copyright: 2021, Çağrı Gökçe <cagri.gokce@pardus.org.tr>
 License: GPL-3.0+
 
 License: GPL-3.0+
