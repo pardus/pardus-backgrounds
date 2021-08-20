@@ -10,6 +10,7 @@ nomake:
 install:
 	@echo "Installing Pardus Background Images"
 	mkdir -p $(DESTDIR)$(PREFIX)
+	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	@cp -fr pictures/1.jpg $(DESTDIR)$(PREFIX)
 	@cp -fr pictures/2.jpg $(DESTDIR)$(PREFIX)
 	@cp -fr pictures/3.jpg $(DESTDIR)$(PREFIX)
@@ -30,6 +31,7 @@ install:
 	@cp -fr pictures/6.svg $(DESTDIR)$(PREFIX)
 	@cp -fr pictures/7.svg $(DESTDIR)$(PREFIX)
 	@cp -fr pictures/8.svg $(DESTDIR)$(PREFIX)
+	@cp -fr pardus-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/
 
 uninstall:
 	@echo "Removing Pardus Background Images"
@@ -53,5 +55,6 @@ uninstall:
 	@rm -fr $(DESTDIR)$(PREFIX)/6.svg
 	@rm -fr $(DESTDIR)$(PREFIX)/7.svg
 	@rm -fr $(DESTDIR)$(PREFIX)/8.svg
+	@rm -fr $(DESTDIR)/usr/share/gnome-background-properties/pardus-backgrounds.xml
 
 .PHONY: install uninstall
