@@ -201,4 +201,20 @@
 		<pcolor>#3465a4</pcolor>
 		<scolor>#000000</scolor>
 	</wallpaper>
+	<wallpaper deleted="false">
+		<name>ym2.png</name>
+		<filename>/usr/share/backgrounds/ym2.png</filename>
+		<options>zoom</options>
+		<shade_type>solid</shade_type>
+		<pcolor>#3465a4</pcolor>
+		<scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>ym3.jpg</name>
+		<filename>/usr/share/backgrounds/ym3.jpg</filename>
+		<options>zoom</options>
+		<shade_type>solid</shade_type>
+		<pcolor>#3465a4</pcolor>
+		<scolor>#000000</scolor>
+	</wallpaper>
 </wallpapers>
