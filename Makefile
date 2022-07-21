@@ -31,6 +31,11 @@ install:
 	@cp -fr pictures/6.svg $(DESTDIR)$(PREFIX)
 	@cp -fr pictures/7.svg $(DESTDIR)$(PREFIX)
 	@cp -fr pictures/8.svg $(DESTDIR)$(PREFIX)
+	@cp -fr pictures/y1.jpg $(DESTDIR)$(PREFIX)
+	@cp -fr pictures/y2.png $(DESTDIR)$(PREFIX)
+	@cp -fr pictures/y3.svg $(DESTDIR)$(PREFIX)
+	@cp -fr pictures/y4.png $(DESTDIR)$(PREFIX)
+	@cp -fr pictures/ym1.png $(DESTDIR)$(PREFIX)
 	@cp -fr pardus-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/
 
 uninstall:
@@ -55,6 +60,11 @@ uninstall:
 	@rm -fr $(DESTDIR)$(PREFIX)/6.svg
 	@rm -fr $(DESTDIR)$(PREFIX)/7.svg
 	@rm -fr $(DESTDIR)$(PREFIX)/8.svg
+	@rm -fr $(DESTDIR)$(PREFIX)/y1.jpg
+	@rm -fr $(DESTDIR)$(PREFIX)/y2.png
+	@rm -fr $(DESTDIR)$(PREFIX)/y3.svg
+	@rm -fr $(DESTDIR)$(PREFIX)/y4.png
+	@rm -fr $(DESTDIR)$(PREFIX)/ym1.png
 	@rm -fr $(DESTDIR)/usr/share/gnome-background-properties/pardus-backgrounds.xml
 
 .PHONY: install uninstall

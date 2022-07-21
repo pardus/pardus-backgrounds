@@ -161,4 +161,44 @@
 		<pcolor>#3465a4</pcolor>
 		<scolor>#000000</scolor>
 	</wallpaper>
+	<wallpaper deleted="false">
+		<name>y1.jpg</name>
+		<filename>/usr/share/backgrounds/y1.jpg</filename>
+		<options>zoom</options>
+		<shade_type>solid</shade_type>
+		<pcolor>#3465a4</pcolor>
+		<scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>y2.png</name>
+		<filename>/usr/share/backgrounds/y2.png</filename>
+		<options>zoom</options>
+		<shade_type>solid</shade_type>
+		<pcolor>#3465a4</pcolor>
+		<scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>y3.svg</name>
+		<filename>/usr/share/backgrounds/y3.svg</filename>
+		<options>zoom</options>
+		<shade_type>solid</shade_type>
+		<pcolor>#3465a4</pcolor>
+		<scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>y4.png</name>
+		<filename>/usr/share/backgrounds/y4.png</filename>
+		<options>zoom</options>
+		<shade_type>solid</shade_type>
+		<pcolor>#3465a4</pcolor>
+		<scolor>#000000</scolor>
+	</wallpaper>
+	<wallpaper deleted="false">
+		<name>ym1.png</name>
+		<filename>/usr/share/backgrounds/ym1.png</filename>
+		<options>zoom</options>
+		<shade_type>solid</shade_type>
+		<pcolor>#3465a4</pcolor>
+		<scolor>#000000</scolor>
+	</wallpaper>
 </wallpapers>
