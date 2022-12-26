@@ -1,3 +1,14 @@
+pardus-backgrounds (1.4) ondokuz; urgency=medium
+
+  [ Yusuf Düzgün ]
+  * added new wallpapers
+  * resized new images
+
+  [ aliriza ]
+  * auto generate xml
+
+ -- Fatih Altun <fatih.altun@pardus.org.tr>  Mon, 26 Dec 2022 19:06:30 +0300
+
 pardus-backgrounds (1.3) ondokuz; urgency=medium
 
   * Add new backgrounds from pardus21 background design competition
