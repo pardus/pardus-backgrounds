@@ -1,74 +1,44 @@
+SHELL=/bin/bash
 ifndef PREFIX
 	PREFIX = /usr/share/backgrounds
 endif
 
-all: nomake
+all: build
 
-nomake:
-	@echo "no make"
+build:
+	echo '<?xml version="1.0" encoding="UTF-8"?>' > pardus-backgrounds.xml
+	echo '<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">' >> pardus-backgrounds.xml
+	echo '<wallpapers>' >> pardus-backgrounds.xml
+	for file in pictures/* ; do \
+	    file=$${file/*\//} ;\
+	    echo '  <wallpaper deleted="false">' >> pardus-backgrounds.xml ;\
+	    echo '    <name>'$$file'</name>' >> pardus-backgrounds.xml ;\
+	    echo '    <filename>/usr/share/backgrounds/'$$file'</filename>' >> pardus-backgrounds.xml ;\
+	    echo '    <options>zoom</options>' >> pardus-backgrounds.xml ;\
+	    echo '    <shade_type>solid</shade_type>' >> pardus-backgrounds.xml ;\
+	    echo '    <pcolor>#3465a4</pcolor>' >> pardus-backgrounds.xml ;\
+	    echo '    <scolor>#000000</scolor>' >> pardus-backgrounds.xml ;\
+	    echo '  </wallpaper>' >> pardus-backgrounds.xml ;\
+	done
+	echo '</wallpapers>' >> pardus-backgrounds.xml
 
 install:
 	@echo "Installing Pardus Background Images"
 	mkdir -p $(DESTDIR)$(PREFIX)
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
-	@cp -fr pictures/1.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/2.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/3.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/4.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/5.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/6.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/7.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/8.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/9.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/10.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/11.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/12.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/1.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/2.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/3.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/4.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/5.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/6.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/7.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/8.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/y1.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/y2.png $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/y3.svg $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/y4.png $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/ym1.png $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/ym2.png $(DESTDIR)$(PREFIX)
-	@cp -fr pictures/ym3.jpg $(DESTDIR)$(PREFIX)
-	@cp -fr pardus-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/
+	for file in pictures/* ; do \
+	    install $$file $(DESTDIR)$(PREFIX) ;\
+	done
+	install pardus-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/
+
+clean:
+	rm -f pardus-backgrounds.xml
 
 uninstall:
 	@echo "Removing Pardus Background Images"
-	@rm -fr $(DESTDIR)$(PREFIX)/1.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/2.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/3.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/4.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/5.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/6.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/7.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/8.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/9.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/10.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/11.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/12.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/1.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/2.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/3.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/4.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/5.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/6.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/7.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/8.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/y1.jpg
-	@rm -fr $(DESTDIR)$(PREFIX)/y2.png
-	@rm -fr $(DESTDIR)$(PREFIX)/y3.svg
-	@rm -fr $(DESTDIR)$(PREFIX)/y4.png
-	@rm -fr $(DESTDIR)$(PREFIX)/ym1.png
-	@rm -fr $(DESTDIR)$(PREFIX)/ym2.png
-	@rm -fr $(DESTDIR)$(PREFIX)/ym3.jpg
-	@rm -fr $(DESTDIR)/usr/share/gnome-background-properties/pardus-backgrounds.xml
+	for file in pictures/* ; do \
+	    rm -f $(DESTDIR)$(PREFIX)/$$file ;\
+	done
+	rm -f $(DESTDIR)/usr/share/gnome-background-properties/pardus-backgrounds.xml
 
 .PHONY: install uninstall
